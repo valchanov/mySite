@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Dogmark fashion style</title>
+	<meta name="author" content="Tihomir Valchanov and Ognian Ganev">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Custom Fonts -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- jQuery create 'nav' and 'footer' and load footer.htm and navbar.htm-->
+	<script> 
+		$(function(){
+			$('<nav/>').prependTo('body').addClass('navbar navbar-default').load('loads/navbar.htm');
+			$('<footer/>').appendTo('body').load('loads/footer.htm'); 
+		});
+    </script>			
+</head>
+
+<body>
+	<div id="root">
+		<video controls autoplay>
+			<source src="video/intro.mp4" type="video/mp4">
+			<source src="video/intro.ogg" type="video/ogg">
+			Your browser does not support the video tag.
+		</video>
+		<header class="home-page">
+			<h1>Go Your Own Way</h1>
+		</header>
+		<div class="home-page">
+			<p>Dogmark embraces all the little things that makes you, you! The answer to perfect style, much like beauty and life itself, lies in the eye of the beholder. So, when it comes to fashion, as long as you choose a look that makes you feel good, then you can’t get it wrong.</p>
+		</div>
+		
+		<a href="collection.html" id="button">Discover more</a>
+		
+		<div id="bottom-icons">
+			<div>
+				<img src="images/tab.png" alt="pic"> 
+				<h2>Brand</h2>
+				<p> The high-quality brand world represents authentic, natural and casual fashion.
+				</p>
+				<p class="overview"><a href="#">Overview</a></p>
+			</div>
+			<div>
+				<img src="images/house.png" alt="pic"> 
+				<h2>Stores</h2>
+				<p>The Dogmark collections can currently be purchased in several hundred retail stores and e-shops in 20 countries.
+				</p>
+				<p class="overview"><a href="#">Overview</a></p>
+			</div>
+			<div>   
+				<img src="images/bag.png" alt="pic"> 
+				<h2>Products</h2>
+				<p>From shoes and eyewear to upholstered furniture - 26 licensed products augment the Dogmark brand world. 
+				</p>
+				<p class="overview"><a href="#">Overview</a></p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
